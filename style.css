@@ -102,14 +102,7 @@ input[type="checkbox"]:checked {
         font-size: 3rem;
     }
 
-    #completebtn {
-        background-image: url('/HTML_CSS_JS/ToDoList/bg_btn.jpg');
 
-        -webkit-background-clip: text;
-        /* Clip background chỉ trên chữ */
-        -webkit-text-fill-color: transparent;
-        font-size: 3rem;
-    }
 
 }
 
