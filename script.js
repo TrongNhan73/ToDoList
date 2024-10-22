@@ -60,15 +60,15 @@ const handleCompleteButton = () => {
                 localStorage.setItem("time", today.getDate());
                 localStorage.setItem("streak", dayStreak + 1);
                 document.getElementsByClassName("num").innerHTML = dayStreak + 1;
+                window.location.reload();
                 alert('Complete successfull');
             }
         }
         else {
             alert('You need complete all task');
         }
-    }
-    {
-        alert('You must have at least once task')
+    } else {
+        alert('You must have at least one task')
     }
 
 }
