@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="daystreak">
+            <div class="num">0</div>
+            <div>day streak</div>
+        </div>
+        <div class="main">
+            <h1 contenteditable="true" onblur="handleSaveButton()">Title</h1>
+            <form>
+                <div class="tasks">
+                    <div class="task">
+                        <input type="checkbox" name="" id="" onchange="handleSaveButton()" />
+                        <textarea type="text" rows="1" class="content-task" placeholder="Enter job here..."
+                            onblur="handleSaveButton()" oninput="handleMutilLine(this)"></textarea>
+                        <button type="button" onclick="handleDeleteButton()" class="deletebtn" title="Delete">X</button>
+                    </div>
+
+                </div>
+
+                <input type="button" value="Add" onclick="handleAddTask(this)" id="btnAdd">
+            </form>
+        </div>
+
+        <button onclick="handleCompleteButton()" id="completebtn">Complete</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
